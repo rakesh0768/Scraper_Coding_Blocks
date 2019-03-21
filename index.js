@@ -9,6 +9,7 @@ const {ensureDirSync} = require('fs-extra');
 const {getDecryptionParameters} = require('./getDecryptionParameters');
 const {typeofFileAvailable, getFileNameFromURL, getDirNameFromCourse} = require('./utils');
 const {EventEmitter} = require('events');
+const {URL} = require('url');
 
 
 /**
