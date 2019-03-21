@@ -70,7 +70,13 @@ function getFileNameFromURL(url) {
  * @return {string} Directory Name.
  */
 function getDirNameFromCourse(courseName, topicName, subTopicName) {
-  return path.join(__dirname, courseName, topicName, subTopicName).replace(/[<>"|?*]/, '_');
+  let nth = 0;
+  return dirName = path.join(__dirname, courseName, topicName, subTopicName).replace(/[<>"|?:*]/g, function(match, i, original){
+    if (nth==0 && match==':') {
+      nth++;
+      return ':'; 
+    } else return '_';
+  });
 }
 
 module.exports = {typeofFileAvailable, getFileNameFromURL, getDirNameFromCourse};
