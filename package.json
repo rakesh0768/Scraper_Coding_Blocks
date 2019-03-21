@@ -1,0 +1,24 @@
+{
+  "name": "coding_blocks",
+  "version": "1.0.0",
+  "description": "download coding blocks videos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
+  },
+  "author": {
+    "name": "Upendra Upadhyay",
+    "email": "upendra.upadhyay.97@gmail.com"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "0.18.0",
+    "fs-extra": "7.0.1",
+    "puppeteer-core": "1.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.10"
+  }
+}
